@@ -7,6 +7,9 @@
   },
   "files": [
     "src/main.tsx",
+    "src/configuration/configuration-model.ts",
+    "src/configuration/configuration-interface.ts",
+    "typings/lodash/lodash.d.ts",
     "typings/react/react.d.ts",
     "typings/react-dom/react-dom.d.ts"
   ],
