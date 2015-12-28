@@ -8,6 +8,7 @@
   "files": [
     "src/main.tsx",
     "src/configuration/configuration-model.ts",
+    "src/configuration/configuration-model-test.ts",
     "src/configuration/configuration-interface.ts",
     "typings/chai/chai.d.ts",
     "typings/lodash/lodash.d.ts",
