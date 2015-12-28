@@ -9,7 +9,7 @@
     "dist": "webpack --TARGET=DIST && node server.js --TARGET=DIST",
     "ci": "npm test && webpack",
     "lint": "tslint src/**/*.ts",
-    "test": "npm run lint && mocha --compilers ts:typescript-require -p . src/**/*-test.ts"
+    "test": "npm run lint && mocha --compilers ts:typescript-require -p / src/**/*-test.ts"
   },
   "dependencies": {
     "lodash": "3.10.1",
