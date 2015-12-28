@@ -7,9 +7,10 @@
     "start": "webpack-dev-server --inline --hot --TARGET=DEV",
     "build": "webpack && node server.js",
     "dist": "webpack --TARGET=DIST && node server.js --TARGET=DIST",
-    "ci": "npm test && webpack",
+    "ci": "tslint src/**/*.ts && tsc && mocha src/**/*-test.js && webpack",
     "lint": "tslint src/**/*.ts",
-    "test": "npm run lint && mocha --compilers ts:typescript-require -p / src/**/*-test.ts"
+    "mocha": "mocha --compilers ts:typescript-require -p / src/**/*-test.ts",
+    "test": "npm run lint && npm run mocha"
   },
   "dependencies": {
     "lodash": "3.10.1",
