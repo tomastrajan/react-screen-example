@@ -9,3 +9,7 @@ const configurations: Configuration[] = [];
 export function getConfigurations(): Configuration[] {
     return _.cloneDeep(configurations);
 }
+
+export function addConfiguration(configuration: Configuration): void {
+    configurations.push(_.cloneDeep(configuration));
+}

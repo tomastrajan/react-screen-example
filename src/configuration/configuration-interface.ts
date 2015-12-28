@@ -1,15 +1,15 @@
 'use strict';
 
 export interface Configuration {
-    id: number;
+    id?: number;
     name: string;
     type: string;
     scheduled: boolean;
-    schedule: string;
-    description: string;
+    schedule?: string;
+    description?: string;
     recipients: string[];
     sql: string;
-    parameters: Parameter[];
+    parameters?: Parameter[];
 }
 
 export interface Parameter {
