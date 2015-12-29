@@ -2,16 +2,15 @@
 
 import { assert } from 'chai';
 
-import ConfigurationModel from './configuration-model';
+import * as model from './configuration-model';
 
 import { Configuration } from './configuration-interface';
 
-let model: ConfigurationModel;
 
 describe('Configuration Model', () => {
 
     beforeEach(() => {
-        model = new ConfigurationModel();
+        model.setConfigurations([]);
     });
 
     it('has empty default configurations', () => {
