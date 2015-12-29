@@ -11,7 +11,7 @@
     "lint": "tslint src/**/*.ts",
     "mocha": "tsc -p . && mocha .tmp/**/*-test.js",
     "test": "npm run lint && npm run mocha",
-    "watch": "watch 'npm run test' src/"
+    "watch": "watch '(tslint src/**/*.ts && tsc -p . && mocha .tmp/**/*-test.js) || true' src/"
   },
   "dependencies": {
     "lodash": "3.10.1",
