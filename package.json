@@ -9,7 +9,7 @@
     "dist": "webpack --TARGET=DIST && node server.js --TARGET=DIST",
     "ci": "npm run test && webpack",
     "lint": "tslint src/**/*.ts",
-    "mocha": "tsc -p . && mocha .tmp/**/*-test.js",
+    "mocha": "tsc -p / && mocha .tmp/**/*-test.js",
     "test": "npm run lint && npm run mocha",
     "watch": "watch 'npm run test' src/"
   },
