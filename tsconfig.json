@@ -14,8 +14,10 @@
     "typings/chai/chai.d.ts",
     "typings/lodash/lodash.d.ts",
     "typings/mocha/mocha.d.ts",
+    "typings/node/node.d.ts",
     "typings/react/react.d.ts",
-    "typings/react-dom/react-dom.d.ts"
+    "typings/react-dom/react-dom.d.ts",
+    "typings/sinon/sinon.d.ts"
   ],
   "filesGlob": [
     "src/**/*.tsx",
