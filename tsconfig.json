@@ -3,7 +3,7 @@
     "module": "commonjs",
     "target": "es5",
     "sourceMap": true,
-§    "outDir": ".tmp/",
+    "outDir": ".tmp/",
     "jsx": "react"
   },
   "files": [
