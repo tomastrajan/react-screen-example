@@ -7,10 +7,11 @@
     "start": "webpack-dev-server --inline --hot --TARGET=DEV",
     "build": "webpack && node server.js",
     "dist": "webpack --TARGET=DIST && node server.js --TARGET=DIST",
-    "ci": "tslint src/**/*.ts && tsc && mocha src/**/*-test.js && webpack",
+    "ci": "npm run test && webpack",
     "lint": "tslint src/**/*.ts",
-    "mocha": "mocha --compilers ts:typescript-require -p / src/**/*-test.ts",
-    "test": "npm run lint && npm run mocha"
+    "mocha": "tsc -p . && mocha .tmp/**/*-test.js",
+    "test": "npm run lint && npm run mocha",
+    "watch": "watch 'npm run test' src/"
   },
   "dependencies": {
     "lodash": "3.10.1",
@@ -36,6 +37,7 @@
     "typescript": "1.7",
     "typescript-require": "0.2.9",
     "url-loader": "0.5.6",
+    "watch": "^0.17.1",
     "webpack": "1.12.2",
     "webpack-dev-server": "1.12.0"
   },

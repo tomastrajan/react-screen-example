@@ -1,9 +1,9 @@
 .idea
 node_modules
 npm-debug.log
-tmp
 build
 dist
+.tmp
 
 src/**/*.js
 src/**/*.map
